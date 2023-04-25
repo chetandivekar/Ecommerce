@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(252,222,124);
+background: linear-gradient(90deg, rgba(252,222,124,1) 0%, rgba(253,196,89,1) 35%, rgba(251,168,50,1) 100%);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    margin: 20px 0 20px 0;
+    justify-content: center;
+    
+
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 10px 10px 0 gray;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+header img{
+    width: 70%;
+    height: 50%;
+}
+
+@media (width < 600px) {
+
+    header img{
+        width: 100%;
+    }
+    .row{
+        width: 80%;
+    }
+    .row img{
+        width: 70px !important;
+        padding: 5px 0 0 0;
+    }
+}
